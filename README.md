@@ -1,1 +1,1 @@
-# Better_Generalization_with_Scaling_Bootstrap
+The code for paper: Better Generalization of White Matter Tract Segmentation to Arbitrary Datasets with Scaled Residual Bootstrap. International Conference on Information Processing in Medical Imaging, 2023, pp.629-640. 
