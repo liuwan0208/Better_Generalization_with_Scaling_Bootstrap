@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ae3caaa-be31-4f0d-9056-7caba75ed5c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../bin/utils_add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/FA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerfile_CPU" beforeDir="false" afterPath="$PROJECT_DIR$/../Dockerfile_CPU" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerfile_GPU" beforeDir="false" afterPath="$PROJECT_DIR$/../Dockerfile_GPU" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/ExpRunner" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/ExpRunner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Tracking" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Tracking" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/TractSeg" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/TractSeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Tractometry" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Tractometry" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/calc_FA" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/calc_FA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/download_all_pretrained_weights" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/download_all_pretrained_weights" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/flip_peaks" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/flip_peaks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/plot_tractometry_results" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/plot_tractometry_results" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/rotate_bvecs" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/rotate_bvecs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/Diffusion.bvals" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/Diffusion.bvecs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/Diffusion.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/Tractometry_subject1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/Tractometry_subject1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/Tractometry_subject2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/Tractometry_subject2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/example_output.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/subjects.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/subjects.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/Pipeline_img_v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/Pipeline_img_v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/utility_scripts/dwi_preprocessing.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/utility_scripts/dwi_preprocessing.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/utility_scripts/trk_2_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/utility_scripts/trk_2_binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/FA.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/AF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/AF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ATR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ATR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CA.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_1.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_2.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_3.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_4.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_5.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_6.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CC_7.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CG_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CG_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CST_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/CST_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/FPT_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/FPT_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/FX_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/FX_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ICP_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ICP_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/IFO_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/IFO_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ILF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ILF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/MCP.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/MLF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/MLF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/OR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/OR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/POPT_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/POPT_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SCP_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SCP_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SLF_III_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SLF_III_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SLF_II_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SLF_II_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SLF_I_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/SLF_I_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/STR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/STR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_FO_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_FO_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_OCC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_OCC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PAR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PAR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_POSTC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_POSTC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PREC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PREC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PREF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PREF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PREM_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/ST_PREM_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_OCC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_OCC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PAR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PAR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_POSTC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_POSTC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PREC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PREC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PREF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PREF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PREM_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/T_PREM_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/UF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/TOM/UF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/Tractometry_2k.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../tests/reference_files/Tractometry_2k.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/AF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/AF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ATR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ATR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CA.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_1.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_2.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_3.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_4.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_5.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_6.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CC_7.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CG_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CG_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CST_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/CST_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/FPT_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/FPT_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/FX_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/FX_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ICP_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ICP_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/IFO_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/IFO_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ILF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ILF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/MCP.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/MLF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/MLF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/OR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/OR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/POPT_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/POPT_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SCP_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SCP_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SLF_III_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SLF_III_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SLF_II_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SLF_II_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SLF_I_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/SLF_I_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/STR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/STR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_FO_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_FO_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_OCC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_OCC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PAR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PAR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_POSTC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_POSTC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PREC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PREC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PREF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PREF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PREM_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/ST_PREM_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_OCC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_OCC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PAR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PAR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_POSTC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_POSTC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PREC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PREC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PREF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PREF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PREM_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/T_PREM_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/UF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations/UF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/AF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/AF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ATR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ATR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CA.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_1.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_2.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_3.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_4.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_5.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_6.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CC_7.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CG_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CG_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CST_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/CST_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/FPT_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/FPT_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/FX_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/FX_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ICP_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ICP_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/IFO_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/IFO_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ILF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ILF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/MCP.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/MLF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/MLF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/OR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/OR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/POPT_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/POPT_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SCP_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SCP_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SLF_III_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SLF_III_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SLF_II_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SLF_II_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SLF_I_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/SLF_I_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/STR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/STR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_FO_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_FO_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_OCC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_OCC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PAR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PAR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_POSTC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_POSTC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PREC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PREC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PREF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PREF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PREM_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/ST_PREM_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_OCC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_OCC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PAR_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PAR_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_POSTC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_POSTC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PREC_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PREC_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PREF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PREF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PREM_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/T_PREM_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/UF_left.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/bundle_segmentations_SR_noPP/UF_right.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/AF_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/AF_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/AF_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/AF_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ATR_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ATR_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ATR_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ATR_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CA_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CA_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_1_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_1_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_2_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_2_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_3_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_3_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_4_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_4_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_5_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_5_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_6_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_6_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_7_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_7_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CC_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CG_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CG_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CG_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CG_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CST_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CST_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CST_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/CST_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FPT_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FPT_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FPT_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FPT_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FX_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FX_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FX_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/FX_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ICP_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ICP_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ICP_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ICP_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/IFO_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/IFO_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/IFO_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/IFO_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ILF_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ILF_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ILF_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ILF_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/MCP_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/MCP_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/MLF_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/MLF_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/MLF_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/MLF_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/OR_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/OR_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/OR_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/OR_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/POPT_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/POPT_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/POPT_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/POPT_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SCP_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SCP_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SCP_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SCP_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_III_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_III_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_III_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_III_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_II_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_II_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_II_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_II_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_I_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_I_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_I_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/SLF_I_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/STR_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/STR_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/STR_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/STR_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_FO_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_FO_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_FO_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_FO_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_OCC_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_OCC_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_OCC_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_OCC_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PAR_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PAR_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PAR_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PAR_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_POSTC_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_POSTC_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_POSTC_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_POSTC_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREC_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREC_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREC_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREC_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREF_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREF_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREF_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREF_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREM_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREM_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREM_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/ST_PREM_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_OCC_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_OCC_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_OCC_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_OCC_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PAR_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PAR_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PAR_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PAR_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_POSTC_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_POSTC_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_POSTC_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_POSTC_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREC_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREC_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREC_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREC_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREF_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREF_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREF_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREF_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREM_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREM_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREM_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/T_PREM_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/UF_left_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/UF_left_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/UF_right_b.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/endings_segmentations/UF_right_e.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/nodif_brain_mask.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/peaks.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/subjects_correlation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../tests/reference_files/subjects_correlation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/subjects_group.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../tests/reference_files/subjects_group.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/Tractometry_h1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/Tractometry_h2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/Tractometry_h3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/Tractometry_s1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/Tractometry_s2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/Tractometry_s3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/tractometry_result_correlation.png.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/reference_files/tractometry/tractometry_result_group.png.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_loader_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_loader_training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dataset_specific_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dataset_specific_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/subjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/subjects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/backup/TractSeg_BX.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/backup/TractSeg_BX.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/backup/TractSeg_HR_DAug_Fast_TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/backup/TractSeg_HR_DAug_Fast_TEST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/custom/my_custom_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/custom/my_custom_experiment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/DmReg.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/DmReg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/DmReg_All_BXTensAg_aPTX_platLR20_noMiss.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/DmReg_All_BXTensAg_aPTX_platLR20_noMiss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/DmReg_All_xtract_PeakRot4.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/DmReg_All_xtract_PeakRot4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_All_BXTensAg_aPTX_platLR20.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_All_BXTensAg_aPTX_platLR20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_All_xtract_PeakRot4.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_All_xtract_PeakRot4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_BXTensAg.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_BXTensAg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_PeakRot4.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/pretrained_models/TractSeg_PeakRot4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/run_multiple.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/run_multiple.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/img_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/img_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/system_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/system_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/base_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/base_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/unet_pytorch_deepsup.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/unet_pytorch_deepsup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/MNI_FA_template.nii.gz" beforeDir="false" afterPath="$PROJECT_DIR$/resources/MNI_FA_template.nii.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/random_forest_peak_orientation_detection.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/random_forest_peak_orientation_detection.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travis_docker" beforeDir="false" afterPath="$PROJECT_DIR$/../travis_docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travis_test" beforeDir="false" afterPath="$PROJECT_DIR$/../travis_test" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kEugzhbVWgkHFrgPS5UGySOF7i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/TractSeg_latentspace" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ae3caaa-be31-4f0d-9056-7caba75ed5c4" name="Default Changelist" comment="" />
+      <created>1605278189651</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605278189651</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="745" y="337" width="642" height="714" key="FileChooserDialogImpl" timestamp="1605278389938">
+      <screen x="0" y="31" width="2160" height="1360" />
+    </state>
+    <state x="745" y="337" width="642" height="714" key="FileChooserDialogImpl/0.31.2160.1360@0.31.2160.1360" timestamp="1605278389938" />
+  </component>
+</project>

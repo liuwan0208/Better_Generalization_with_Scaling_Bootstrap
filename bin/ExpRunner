@@ -1,0 +1,206 @@
+#!/usr/bin/env python
+
+"""
+This module is for training the model. See Readme.md for more details about training your own model.
+
+Examples:
+    Run local:
+    $ ExpRunner --config=XXX
+
+    Predicting with new config setup:
+    $ ExpRunner --train=False --test=True --lw --config=XXX
+"""
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
+import warnings
+import os
+import importlib
+import argparse
+import pickle as pkl
+from pprint import pprint
+import distutils.util
+from os.path import join
+import os
+
+import nibabel as nib
+import numpy as np
+import torch
+
+from tractseg.libs import data_utils
+from tractseg.libs import direction_merger
+from tractseg.libs import exp_utils
+from tractseg.libs import img_utils
+from tractseg.libs import peak_utils
+from tractseg.libs.system_config import SystemConfig as C
+from tractseg.libs import trainer
+from tractseg.data.data_loader_training import DataLoaderTraining as DataLoaderTraining2D
+from tractseg.data.data_loader_training_3D import DataLoaderTraining as DataLoaderTraining3D
+from tractseg.data.data_loader_inference import DataLoaderInference
+from tractseg.data import dataset_specific_utils
+from tractseg.models.base_model import BaseModel
+from bin.utils_add import compute_dice_score
+
+warnings.simplefilter("ignore", UserWarning)  # hide scipy warnings
+warnings.simplefilter("ignore", FutureWarning)  # hide h5py warnings
+warnings.filterwarnings("ignore", message="numpy.dtype size changed")  # hide Cython benign warning
+warnings.filterwarnings("ignore", message="numpy.ufunc size changed")  # hide Cython benign warning
+
+
+def make_list(subjects, ratio_list):
+    name_list = []
+    for sub in subjects:
+        name_list.append(sub)
+        for ratio in ratio_list:
+            name = sub+'_r'+str(ratio)
+            name_list.append(name)
+    return name_list
+
+# #100 HCP
+# HCP_subjects =["992774", "991267", "987983", "984472", "983773", "979984", "978578", "965771", "965367", "959574",
+#                "958976", "957974", "951457", "932554", "930449", "922854", "917255", "912447", "910241", "904044",
+#                "901442", "901139", "901038", "899885", "898176", "896879", "896778", "894673", "889579", "877269",
+#                "877168", "872764", "872158", "871964", "871762", "865363", "861456", "859671", "857263", "856766",
+#                "849971", "845458", "837964", "837560", "833249", "833148", "826454", "826353", "816653", "814649",
+#                "802844", "792766", "792564", "789373", "786569", "784565", "782561", "779370", "771354", "770352",
+#                "765056", "761957", "759869", "756055", "753251", "751348", "749361", "748662", "748258", "742549",
+#                "734045", "732243", "729557", "729254", "715647", "715041", "709551", "705341", "704238", "702133"
+#                "695768", "690152", "687163", "685058", "683256", "680957", "679568", "677968", "673455", "672756",
+#                "665254", "654754", "645551", "644044", "638049", "627549", "623844", "622236", "620434", "613538"]
+# pretrain_sub = ["992774", "991267", "987983", "984472", "983773", "979984", "978578", "965771", "965367", "959574",
+#                 "958976", "957974", "951457", "932554", "930449", "922854", "917255", "912447", "910241", "904044",
+#                 "901442", "901139", "901038", "899885", "898176", "896879", "896778", "894673", "889579", "877269",
+#                 "877168", "872764", "872158", "871964", "871762", "865363", "861456", "859671", "857263", "856766",
+#                 "849971", "837560", "814649",
+# 				"751348", "749361", "748662", "748258", "742549",
+#                 "734045", "732243", "729557", "729254", "715647", "715041", "709551", "705341", "704238", "702133"]
+
+#***************55 training sub w/o residual bootstrap*****************
+train_sub_55 = ["992774", "991267", "987983", "984472", "983773", "979984", "978578", "965771", "965367", "959574",
+             "958976", "957974", "951457", "932554", "930449", "922854", "917255", "912447", "910241", "904044",
+             "901442", "901139", "901038", "899885", "898176", "896879", "896778", "894673", "889579", "877269",
+             "877168", "872764", "872158", "871964", "871762", "865363", "861456", "859671", "857263", "856766",
+             "849971", "845458", "837964", "837560", "833249", "833148", "826454", "826353", "816653", "814649",
+             "765056", "761957", "759869", "756055", "753251"]# train 55 subjects in total
+
+
+val_sub  = ["751348", "749361", "748662", "748258", "742549",
+            "734045", "732243", "729557", "729254", "715647", "715041", "709551", "705341", "704238", "702133"]
+
+test_sub = ["802844", "792766", "792564", "789373", "786569", "784565", "782561", "779370", "771354", "770352",
+            "695768", "690152", "687163", "685058", "683256", "680957", "679568", "677968", "673455", "672756",
+            "665254", "654754", "645551", "644044", "638049", "627549", "623844", "622236", "620434", "613538"]
+
+def main():
+	parser = argparse.ArgumentParser(description="Train a network on your own data to segment white matter bundles.",
+									 epilog="Written by Jakob Wasserthal. Please reference 'Wasserthal et al. "
+											"TractSeg - Fast and accurate white matter tract segmentation. "
+											"https://doi.org/10.1016/j.neuroimage.2018.07.070)'")
+	parser.add_argument("--config", metavar="name", help="Name of configuration to use",
+						default='my_custom_experiment')
+	parser.add_argument("--train", metavar="True/False", help="Train network",
+						type=distutils.util.strtobool, default=True)
+	parser.add_argument("--test", metavar="True/False", help="Test network",
+						type=distutils.util.strtobool, default=False)
+	parser.add_argument("--seg", action="store_true", help="Create binary segmentation", default=True)
+	parser.add_argument("--probs", action="store_true", help="Create probmap segmentation")
+	parser.add_argument("--lw", action="store_true", help="Load weights of pretrained net")
+	parser.add_argument("--only_val", action="store_true", help="only run validation")
+	parser.add_argument("--en", metavar="name", help="Experiment name")
+	parser.add_argument("--fold", metavar="N", help="Which fold to train when doing CrossValidation", type=int)
+	parser.add_argument("--verbose", action="store_true", help="Show more intermediate output", default=True)
+	args = parser.parse_args()
+
+	Config = getattr(importlib.import_module("tractseg.experiments.base"), "Config")()
+	if args.config:
+		# Config.__dict__ does not work properly therefore use this approach
+		Config = getattr(importlib.import_module("tractseg.experiments.custom." + args.config), "Config")()
+
+	if args.en:
+		Config.EXP_NAME = args.en  ## my_custom_experiment
+
+	Config.TRAIN = bool(args.train)  ## True
+	Config.TEST = bool(args.test)  ## False
+	Config.SEGMENT = args.seg  ## False
+	if args.probs:
+		Config.GET_PROBS = True  ## False
+	if args.lw:
+		Config.LOAD_WEIGHTS = args.lw  ## False
+	if args.fold:
+		Config.CV_FOLD = args.fold  ## 0
+	if args.only_val:
+		Config.ONLY_VAL = True  ## False
+	Config.VERBOSE = args.verbose  ## True:show more intermedia output
+
+	Config.MULTI_PARENT_PATH = join(C.EXP_PATH, Config.EXP_MULTI_NAME)  ## '//home/wanliu/TractSeg/hcp_exp/'
+	Config.EXP_PATH = join(C.EXP_PATH, Config.EXP_MULTI_NAME,
+						   Config.EXP_NAME)  ## '/home/wanliu/TractSeg/hcp_exp/my_custom_experiment'
+
+
+	##****Define the used training subject*****
+	ratioone = 1
+	training_sub = Config.training_sub
+	used_subject_list = train_sub_55[0:training_sub]
+	##----USE BOOTSTRAP----
+	if Config.Use_Daug==True:
+		ratio_list = [2,3,4] ##[1,2,3,4]
+		train_sub  = make_list(used_subject_list, ratio_list)
+	##----DO NOT USE BOOTSTRAP----
+	if Config.Use_Daug==False:
+		train_sub = used_subject_list
+
+	print(train_sub)
+
+
+	Config.TRAIN_SUBJECTS = train_sub
+	Config.VALIDATE_SUBJECTS = val_sub
+	Config.TEST_SUBJECTS = []
+	Config.training_sub = training_sub ## number of training subjects
+	Config.ratioone = ratioone
+
+	# Config.LOAD_WEIGHTS = False
+	# if Config.WEIGHTS_PATH == '':
+	# Config.WEIGHTS_PATH = ''
+
+	if Config.WEIGHTS_PATH == "":
+		Config.WEIGHTS_PATH = exp_utils.get_best_weights_path(Config.EXP_PATH, Config.LOAD_WEIGHTS)
+
+	# Autoset input dimensions based on settings
+	Config.INPUT_DIM = dataset_specific_utils.get_correct_input_dim(Config)  ## (144,144)
+	Config = dataset_specific_utils.get_labels_filename(Config)  ## 'LABELS_FILENAME': 'bundle_masks_72'
+
+	if Config.EXPERIMENT_TYPE == "peak_regression":
+		Config.NR_OF_CLASSES = 3 * len(dataset_specific_utils.get_bundle_names(Config.CLASSES)[1:])
+	else:
+		Config.NR_OF_CLASSES = len(dataset_specific_utils.get_bundle_names(Config.CLASSES)[1:])  ## 72
+
+	if Config.TRAIN and not Config.ONLY_VAL:
+		Config.EXP_PATH = exp_utils.create_experiment_folder(Config.EXP_NAME, Config.MULTI_PARENT_PATH, Config.TRAIN)
+
+	if Config.TRAIN:
+		if Config.VERBOSE:
+			print("Hyperparameters:")
+			exp_utils.print_Configs(Config)
+
+		with open(join(Config.EXP_PATH, "Hyperparameters.txt"), "a") as f:
+			Config_dict = {attr: getattr(Config, attr) for attr in dir(Config)
+						   if not callable(getattr(Config, attr)) and not attr.startswith("__")}
+			pprint(Config_dict, f)
+		if Config.DIM == "2D":
+			data_loader = DataLoaderTraining2D(Config)
+		else:
+			data_loader = DataLoaderTraining3D(Config)
+		print("Training...")
+		model = BaseModel(Config)
+		trainer.train_model(Config, model, data_loader)
+
+	Config = exp_utils.get_correct_labels_type(Config)
+
+
+
+if __name__ == '__main__':
+	os.environ['CUDA_VISIBLE_DEVICES'] = '7'
+	main()
+
